@@ -1,0 +1,302 @@
+html {
+  scroll-behavior: smooth;
+  /* To make it scroll smoothly instead of jumping directly. */
+}
+
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* -------------------------------------------------------------- */
+
+#scrollArrow {
+  position: fixed;
+  z-index: 3;
+  right: 30px;
+  bottom: 30px;
+  display: none;
+  /* Hide for now and use JS for show the arrow */
+}
+
+#scrollArrow>img {
+  width: 50px;
+  transition: transform 0.3s;
+}
+
+#scrollArrow>img:hover {
+  transform: scale(1.2);
+}
+
+/* -------------------------------------------------------------- */
+
+header {
+  background-image: url(../Images/dog-sitting-at-the-table.jpg);
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  position: relative;
+}
+
+.website-name {
+  left: 100px;
+  font-size: 25px;
+  text-decoration: none;
+
+  background: linear-gradient(to right, #ee0979, #ff6a00);
+  background-clip: text;
+  color: transparent;
+}
+
+.nav-top {
+  position: absolute;
+  top: 40px;
+  right: 250px;
+  display: flex;
+  column-gap: 60px;
+}
+
+.nav-top a {
+  color: black;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.nav-top a:hover {
+  color: deeppink;
+}
+
+/* -------------------------------------------------------------- */
+
+.intro {
+  position: absolute;
+  top: 280px;
+  left: 120px;
+}
+
+.intro h1 {
+  font-size: 40px;
+  display: inline;
+}
+
+.intro p {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.button-1 {
+  width: 180px;
+  padding: 18px 0px;
+  font-size: 15px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  background-color: tomato;
+  color: white;
+}
+
+.button-1:hover {
+  background-color: #f74d2f;
+}
+
+/* -------------------------------------------------------------- */
+
+.about {
+  margin-top: 130px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about div img {
+  width: 600px;
+  height: 450px;
+}
+
+.about div h3 {
+  margin-top: 20px;
+  color: deeppink;
+}
+
+.about div h2 {
+  font-size: 25px;
+}
+
+.about-ul {
+  list-style-type: none;
+}
+
+.about-ul li {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.about-ul li img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.about-ul li b {
+  margin-right: 5px;
+}
+
+/* -------------------------------------------------------------- */
+
+.loved-ones {
+  margin-top: 120px;
+  position: relative;
+}
+
+.loved-ones img {
+  width: 100%;
+  height: 600px;
+}
+
+.loved-ones div {
+  position: absolute;
+  top: 160px;
+  left: 130px;
+  color: white;
+}
+
+.loved-ones div h1 {
+  font-size: 45px;
+}
+
+.loved-ones div p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* -------------------------------------------------------------- */
+
+.Adoption-Process {
+  margin-top: 120px;
+  margin-bottom: 100px;
+}
+
+.heading-h3-1 {
+  text-align: center;
+  color: deeppink;
+}
+
+.heading-h1-1 {
+  text-align: center;
+  font-size: 45px;
+}
+
+.process {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.process-divs {
+  border: 2px lightgray solid;
+  border-radius: 12px;
+  padding: 30px;
+  transition: transform 0.3s ease;
+}
+
+.process-divs:hover{
+  transform: scale(1.04);
+}
+
+.process div img {
+  width: 400px;
+  height: 300px;
+  border-radius: 30px;
+}
+
+.process div h2 {
+  text-align: center;
+}
+
+/* -------------------------------------------------------------- */
+
+.donate-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.donate-content>h2 {
+  padding-top: 60px;
+  font-size: 45px;
+}
+
+.link-1 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.donate-img>img {
+  height: 500px;
+}
+
+/* -------------------------------------------------------------- */
+
+footer {
+  width: 100%;
+  background-color: #1d1d1d;
+  color: lightgray;
+}
+
+footer h1 {
+  text-align: center;
+  padding: 40px 0;
+
+  background: linear-gradient(to right, #ef4f9c, #f78c3f);
+  background-clip: text;
+  color: transparent;
+}
+
+.footer-box {
+  display: flex;
+  column-gap: 30px;
+  margin-bottom: 50px;
+}
+
+.footer-details h3 {
+  margin: 0;
+}
+
+.footer-box div img {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+}
+
+/* -------------------------------------------------------------- */
+
+.nav-bottom {
+  display: flex;
+  column-gap: 60px;
+  justify-content: center;
+  padding: 30px;
+  background-color: rgb(35, 36, 37);
+}
+
+.nav-bottom a {
+  color: lightgray;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* -------------------------------------------------------------- */
+
+footer>p {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+/* -------------------------------------------------------------- */
